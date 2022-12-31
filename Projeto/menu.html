@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Responsivo</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <!-- html5shiv.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- reset -->
+        <style rel="stylesheet">
+
+            /* Reset */
+            * {
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Formatado o topo da página */
+            #header {
+                width: 85%;
+                background-color: #0f9;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            #header #logo a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            #header #logo h1 {
+                font-size: 2.4em;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            div#mobile {
+                display: none;
+            }
+
+            #header #menu ul {
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            #header #menu li {
+                margin-right: 15px;
+            }
+
+            #header #menu a {
+                color: white;
+                font-variant: small-caps;
+                letter-spacing: 2px;
+                text-decoration: none;
+                font-size: 1.2em;
+            }
+
+            #header #menu a:hover {
+                color: #f05;
+            }
+
+            /* Responsividade */
+            @media screen and (max-width: 1000px) {
+                #header {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 570px) {
+
+                #header {
+                    display: block;
+                }
+
+                div#logo {
+                    display: inline-block;
+                    width: 60%;
+                    text-align: center;
+                }
+
+                div#mobile {
+                    display: inline-block;
+                    text-align: right;
+                    width: 20%;
+                    cursor: pointer;
+                }
+
+                div#menu {
+                    border-top: 3px solid #000;
+                    background-color: rgb(44, 128, 94);
+                    width: 100vw;
+                    height: 350px;
+                }
+
+                div#menu ul {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+
+            @media screen and (max-width: 400px) {
+                
+                #header #logo {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+
+                #header #menu ul {
+                    margin-top: 0;
+                    padding-top: 0;
+                    flex-direction: column;
+                }
+
+                #header #menu li {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                #header #menu a li:hover {
+                    cursor: pointer;
+                    background-color: hsla(156, 100%, 50%, 0.288);
+                    color: #f05;
+                }
+
+
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="header">
+
+            <div id="logo">
+                <a href="menu.html">
+                    <h1>Logo</h1>
+                </a>
+            </div> <!-- logo -->
+
+            <div id="mobile">
+                <img src="img/open-menu.svg" id="menuMobile">
+            </div>
+
+            <div id="menu">
+                <ul type="none">
+                    <li>
+                        <a href="#" rel="next" target="_self">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" rel="next" target="_self">Curso</a>
+                    </li>
+                    <li>
+                        <a href="#" rel="next" target="_self">Contato</a>
+                    </li>
+                </ul>
+            </div> <!-- menu -->
+
+        </div> <!-- header -->
+
+    </body>
+</html>

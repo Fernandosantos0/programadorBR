@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root { /* Variáveis CSS */
+	--cor-primaria: #FA3622;
+	--cor-secundaria: #FA202D;
+}
+
+* { /* Reset */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html,
+head {
+	min-height: 100vh;
+}
+
+body {
+	background-image: url(../img/bg-fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 10px rgba(0, 0, 0, .5);
+}
+
+.container h1 {
+	text-transform: uppercase;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.container input {
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+
+.container input:focus {
+	outline-color: var(--cor-primaria);
+}
+
+button[type="button"] {
+	display: block;
+	margin: auto;
+	background-color: var(--cor-primaria);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-property: background-color, box-shadow;
+	transition-duration: 2s;
+	transition-timing-function: linear;}
+
+button[type="button"]:hover {
+	background-color: var(--cor-secundaria);
+	box-shadow: 2px 3px 5px var(--cor-primaria);
+}
+
+div[id="resultado"] {
+	margin-top: 15px;
+}
+
+div[id="resultado"] > p {
+	margin-top: 5px;
+}

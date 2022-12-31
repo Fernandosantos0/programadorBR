@@ -1,0 +1,10 @@
+const tabuada = 7;
+let i = 1;
+
+do {
+    console.log(tabuada,' x ',i," = ",tabuada*i);
+    if(i === 6) {
+        continue;
+    }
+    i++;
+} while(i<=10)

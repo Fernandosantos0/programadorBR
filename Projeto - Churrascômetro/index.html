@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Projeto Churrascômetro</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/folhaEstilo.css">
+		<!-- script.js -->
+		<script type="text/javascript" src="assets/js/script.js" defer></script>
+	</head>
+	<body>
+		
+		<div class="container">
+			<h1>Churrascômetro</h1>
+
+			<input type="number" id="adultos" name="adulto" min="0" placeholder="Adultos">
+			<input type="number" class="mb-15 mt-15" id="criancas" name="criancas" min="0" placeholder="Crianças">
+			<input type="number" class="mb-15" id="duracao" name="duracao" min="0" placeholder="Duração (h)">
+
+			<button type="button" id="btn-calcular" class="btn-calc">Calcular</button>
+
+			<div id="resultado"></div>
+		</div> <!-- container -->
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+/*
+* REGRA DE NEGÓCIO
+*/
+
+// Carne - 400g por pessoa + de 6 horas - 650
+// Cerveja - 1200ml por pessoa + 6 horas - 200ml
+// Refrigerante/água - 100ml por pessoa + 6 horas 1500ml
+
+// Crianças valem por 0,5

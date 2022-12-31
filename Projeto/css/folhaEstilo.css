@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* Descarregando a fonte */
+@font-face {
+    font-family: "Fonte Personalizada 01";
+    src: url('./../fonts/KGSecondChancesSketch.ttf');
+}
+
+@font-face {
+    font-family: "Fonte Personalizada 02"; 
+    src: url('./../fonts/KGSecondChancesSolid.ttf');
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: Arial,Helvetica, sans-serif;
+}
+
+/* Variáveis css */
+:root {
+	--fonte01: "Fonte Personalizada 01", Arial, Helvetica;
+	--fonte02: "Fonte Personalizada 02", Arial, Helvetica;
+}
+
+body {
+    margin: 0;
+}
+
+/* Estilo da lista */
+ul,
+ol {
+    margin: 0px 0px 0px 5px;
+    padding: 0;
+}
+
+section h3 {
+    font-family: var(--fonte01);
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 5px;
+}
+
+section#lista ul li {
+    margin-bottom: 10px;
+    list-style-position: inside;
+    list-style-image: url('../img/placeholder.png');
+}
+
+section#lista ol li {
+    margin-left: 25px;
+}
+
+
+
+
+/* Alinhamento vertical */
+section#alinhamento-vertical {
+    text-align: center;
+}
+
+section#alinhamento-vertical div#c1,
+section#alinhamento-vertical div#c2 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    margin-left: 19px;
+    color: white;
+    vertical-align: top;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+section#alinhamento-vertical div#c1 {
+    background-color: #0f9;
+    line-height: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+section#alinhamento-vertical div#c1:hover {
+    background-color: #0f0;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+section#alinhamento-vertical div#c2 {
+    background-color: #09f;
+    position: relative;
+}
+
+section#alinhamento-vertical div#c2:hover {
+    background-color: #00f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.centralizar-V {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section#alinhamento-vertical div#c3 {
+    background-color: #f55;
+	width: 300px;
+	display: inline-block;
+    border: 1px solid #888;
+    border-radius: 10px;
+    margin-left: 19px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
+	padding: 150px opx;
+}
+
+section#alinhamento-vertical div#c3:hover {
+    background-color: #f00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section#tabela table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+/* Trabalhando com overflow */
+section#over div.conteudo {
+	max-width: 500px;
+	margin: 0 auto 25px;
+	background: #f9f;
+	padding: 15px;
+	height: 300px;
+	/* Propriedade para manipular elemento transbordando */
+	overflow: auto;
+}
+
+
+/* Trabalhando com float */
+section#flutuacao {
+    width: 100%;
+}
+
+section#flutuacao div.dv1,
+section#flutuacao div.dv2,
+section#flutuacao div.dv3 {
+    width: 300px;
+    height: 300px;
+    margin-right: 15px;
+    background: #888;
+    float: left;
+}
+
+div.limpar::before { /* Classe para limpar a fluatuação de uma propriedade float */
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+/* Responsividade */
+@media screen and (max-width: 990px) {
+
+    section#alinhamento-vertical div#c1,
+    section#alinhamento-vertical div#c2,
+    section#alinhamento-vertical div#c3 {
+        display: block;
+        margin: 25px auto;
+    }
+
+}

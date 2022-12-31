@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"> <!-- Codificação da página -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formatação</title> <!-- Título da aba da página -->
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" sizes="225x225">
+        <!-- css -->
+        <link rel="stylesheet" href="css/folhaEstilo.css">
+    </head>
+    <body>
+
+        <section>
+            <h3 style="margin-bottom: 0; padding-bottom: 0;">Vídeo hospedado no Vimeo e no YouTube</h3>
+            <div style="padding:60% 0 0 0;position:relative; width: 95%; display: block; margin: 0 auto;"><iframe src="https://player.vimeo.com/video/711198066?h=1785b725c1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="12 Conceitos de Servidores de Rede que o t&amp;eacute;cnico precisa conhece.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> <!-- Vídeo hospedado na Vimeo -->
+			
+			<iframe style="display: block; margin: 0 auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Cg_aoh-ypmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Vídeo hospedado no YouTube -->
+        </section>
+
+        <section id="lista">
+            <h3>Lista não ordenada</h3>
+            <!-- Lista não ordenada -->
+            <ul>
+                <li>Café</li>
+                <li>Arroz</li>
+                <li>Ovo</li>
+                <li>Feijão</li>
+                <li>Milho</li>
+                <li>Macarrão</li>
+                <li>Açúcar</li>
+                <li>Biscoito</li>
+                <li>Vinho</li>
+                <li>Alho</li>
+            </ul> <!-- /Lista não ordenada -->
+            
+            
+            <h3>Lista ordenada</h3>
+            <ol type="1" start="3" reversed>
+                <li>Café</li>
+                <li>Arroz</li>
+                <li>Ovo</li>
+                <li>Feijão</li>
+                <li>Milho</li>
+                <li>Macarrão</li>
+                <li>Açúcar</li>
+                <li>Biscoito</li>
+                <li>Vinho</li>
+                <li>Alho</li>
+            </ol>
+        </section> <!-- ul -->
+
+        <hr>
+
+        <section id="alinhamento-vertical">
+            <h3>Centralizando elemento na horizontal</h3>
+            <div id="c1">
+                <p>Olá mundo 1</p>
+            </div> <!-- c1 -->
+            <div id="c2">
+                <div class="centralizar-V">
+                    <p>Olá mundo 2</p>
+                </div> <!-- centralizar-V -->
+            </div> <!-- c2 -->
+            <div id="c3">
+                <p>Olá mundo 3</p>
+            </div> <!-- c3 -->
+
+        </section> <!-- alinhamento-vertical -->
+		
+		<hr>
+		
+		<section id="over">
+			<h3>Trabalhando com overflow</h3>
+			<div class="conteudo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>		
+		</section>
+        
+        <section id="flutuacao">
+            <div class="dv1"></div>
+            
+            <div class="dv2"></div>
+            
+            <div class="dv3"></div>
+            
+            <div class="limpar">Olá mundo da programação web!!!</div>
+        </section>
+
+        <section id="tabela">
+            <table border="1">
+                <caption>Criando uma tabela para prática</caption>
+                <thead>
+                    <tr>
+                        <th>Rack</th>
+                        <th>Nome completo</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Fernando Santos</td>
+                        <td>22 anos</td>
+                        <td>Nova Iguaçu</td>
+                        <td>Brasil</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">Desenvolvido por - <a href="https://github.com/Fernandosantos0" rel="external" target="_blank" hreflang="en">Fernando Santos</a></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <div style="margin-bottom: 100px;"></div>
+        
+    </body>
+</html>
